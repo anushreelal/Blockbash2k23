@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "Blockbash2k23_backend": {
+      "main": "src/Blockbash2k23_backend/main.mo",
+      "type": "motoko"
+    },
+    "Blockbash2k23_frontend": {
+      "dependencies": [
+        "Blockbash2k23_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/Blockbash2k23_frontend/src/index.html"
+      },
+      "source": [
+        "src/Blockbash2k23_frontend/assets",
+        "dist/Blockbash2k23_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
